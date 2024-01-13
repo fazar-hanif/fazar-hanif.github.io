@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazar's Jersey</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-image: url('asset/bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background-color: transparent;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content {
+            min-height: calc(100vh - 150px);
+            padding-bottom: 50px;
+        }
+
+        .absolute-logo {
+            position: absolute;
+            left: 45px;
+            top: 50%;
+            transform: translateY(-50%);
+            max-width: 100px;
+            height: auto;
+            z-index: 1;
+        }
+
+        .logo-text-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-text-container h1 {
+            margin-left: 70px;
+        }
+        
+        #LOGO {
+            position: relative;
+            z-index: 2;
+            font-size: 2rem;
+            color: #007bff;
+            text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF, 0 0 15px #00FFFF, 0 0 20px #0077FF, 0 0 30px #0077FF, 0 0 40px #0077FF, 0 0 55px #0077FF, 0 0 75px #0077FF; /* Efek stroke dengan variasi ukuran dan warna */
+
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        .content {
+            padding-top: 11%;
+            padding-right: 45%;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #007bff;
+            text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF, 0 0 15px #00FFFF, 0 0 20px #0077FF, 0 0 30px #0077FF, 0 0 40px #0077FF, 0 0 55px #0077FF, 0 0 75px #0077FF; /* Efek stroke dengan variasi ukuran dan warna */
+
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        input[type="email"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            padding: 1rem 5%;
+            text-align: center;
+        }
+
+        .social-media a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+
+        .social-media a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-text-container">
+            <img class="absolute-logo" src="asset/logo.png" alt="JerseyFutbol Logo">
+            <h1 id="LOGO">Fazar's Jersey</h1>
+        </div>
+        <nav>
+            <ul>
+                <i class="fas fa-user"></i>
+                <li><a href="#">Profile</a></li>
+                <i class="fas fa-tags"></i>
+                <li><a href="#">Pricing</a></li>
+                <i class="fas fa-phone"></i>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div class="content">
+            <h1>Jersey Sepak Bola Terbaru</h1>
+            <p>Jelajahi koleksi jersey sepak bola premium kami.<br>Pilih tim favorit Anda dan kenakan dengan bangga!</p>
+            
+            <form action="#" method="post">
+                <input type="email" placeholder="Masukkan email Anda" required>
+                <button type="submit">DAFTAR</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Fazar's Jersey. Hak Cipta Dilindungi.</p>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
